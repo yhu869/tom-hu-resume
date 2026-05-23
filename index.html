@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Hu | Software Engineer</title>
+    <meta
+      name="description"
+      content="Tom Hu's bilingual resume website featuring education, technical skills, software engineering experience, projects, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <a class="brand" href="#top">Tom Hu</a>
+        <div class="nav-links">
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <div class="language-switcher" aria-label="Language switcher">
+            <button class="lang-button active" data-lang="en" type="button">EN</button>
+            <button class="lang-button" data-lang="zh" type="button">中文</button>
+          </div>
+          <a class="button button-nav" href="Tom-Hu-Resume.pdf" download data-i18n="nav.download">Download Resume</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Software Engineer</p>
+          <h1 data-i18n="hero.name">Tom Hu</h1>
+          <p class="hero-meta" data-i18n="hero.meta">M.Eng. Software Engineering · Full-Stack & Backend Engineer · Toronto, ON</p>
+          <p class="subtitle" data-i18n="hero.subtitle">
+            I build high-performance web applications, backend services, and
+            cloud-native systems with a strong focus on scalability, reliability,
+            and measurable product impact.
+          </p>
+          <p class="summary" data-i18n="hero.summary">
+            With experience across Django, FastAPI, React, Spring, PostgreSQL,
+            Redis, Kafka, Kubernetes, AWS, and GCP, I enjoy turning complex
+            business requirements into clean, production-ready software.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="Tom-Hu-Resume.pdf" download data-i18n="hero.download">Download PDF Resume</a>
+            <a class="button secondary" href="#projects" data-i18n="hero.projects">View projects</a>
+            <a class="button ghost" href="#contact" data-i18n="hero.contact">Contact me</a>
+          </div>
+          <div class="hero-highlights">
+            <span data-i18n="hero.highlight1">Optimized page load from 3s to 113ms</span>
+            <span data-i18n="hero.highlight2">Reduced first-screen load from 6s to ~825ms</span>
+            <span data-i18n="hero.highlight3">Built systems supporting 20,000–50,000 daily peak events</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h2 data-i18n="snapshot.title">Professional Snapshot</h2>
+          <ul>
+            <li><strong data-i18n="snapshot.emailLabel">Email:</strong> huyugework@gmail.com</li>
+            <li><strong data-i18n="snapshot.locationLabel">Location:</strong> <span data-i18n="snapshot.locationValue">Toronto, ON / Shanghai, China</span></li>
+            <li><strong data-i18n="snapshot.educationLabel">Education:</strong> <span data-i18n="snapshot.educationValue">M.Eng. in Software Engineering</span></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yuge-hu-132528278" target="_blank" rel="noreferrer">linkedin.com/in/yuge-hu-132528278</a></li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="education">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="education.eyebrow">Education</p>
+          <h2 data-i18n="education.title">Academic background</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="card timeline-item">
+            <div class="card-head">
+              <div>
+                <h3 data-i18n="education.masterTitle">Master of Engineering – Software Engineering</h3>
+                <p class="muted" data-i18n="education.masterSchool">Western University · London, ON</p>
+              </div>
+              <span class="pill">Sep 2024 — Aug 2025</span>
+            </div>
+          </article>
+
+          <article class="card timeline-item">
+            <div class="card-head">
+              <div>
+                <h3 data-i18n="education.bachelorTitle">Bachelor of Computer Science (Honours)</h3>
+                <p class="muted" data-i18n="education.bachelorSchool">University of Windsor · Windsor, ON</p>
+              </div>
+              <span class="pill">Sep 2020 — Jan 2024</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+            <h2 data-i18n="experience.title">What I’ve worked on</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="card timeline-item">
+              <div class="card-head">
+                <div>
+                  <h3 data-i18n="experience.baimeng.role">Software Engineer</h3>
+                  <p class="muted" data-i18n="experience.baimeng.company">Baimeng Information Technology Co., Ltd. · Shanghai, China</p>
+                </div>
+                <span class="pill">Sep 2025 — Dec 2025</span>
+              </div>
+              <p data-i18n="experience.baimeng.summary">
+                Built a real estate analysis and decision support platform using
+                Django and React with data visualization, caching, access control,
+                and production-grade testing.
+              </p>
+              <ul>
+                <li data-i18n="experience.baimeng.point1">Developed a real estate analysis system with Django, React, Chart.js, PostgreSQL, and Redis, and implemented fine-grained permissions with Django REST Framework.</li>
+                <li data-i18n="experience.baimeng.point2">Implemented PDF chart export with jsPDF and html2canvas, dynamically adjusting capture areas and scaling for clear output across varying DPI and resolutions.</li>
+                <li data-i18n="experience.baimeng.point3">Optimized Django ORM queries with select_related and prefetch_related, reducing page load time from 3s to 113ms.</li>
+                <li data-i18n="experience.baimeng.point4">Built and maintained tests covering 120+ Django APIs, 80+ Celery tasks, and 50+ React components to improve reliability under high concurrency.</li>
+              </ul>
+            </article>
+
+            <article class="card timeline-item">
+              <div class="card-head">
+                <div>
+                  <h3 data-i18n="experience.trip.role">Software Development Intern</h3>
+                  <p class="muted" data-i18n="experience.trip.company">Trip.com · Shanghai, China</p>
+                </div>
+                <span class="pill">Feb 2024 — Aug 2024</span>
+              </div>
+              <p data-i18n="experience.trip.summary">
+                Designed backend services and frontend features for hotel search,
+                booking, and order processing in a high-traffic travel platform.
+              </p>
+              <ul>
+                <li data-i18n="experience.trip.point1">Designed backend services with FastAPI and Celery, integrating MySQL, Redis, and Kafka, and implemented hotel search and display features with React.</li>
+                <li data-i18n="experience.trip.point2">Optimized hotel listing queries with pagination tuning, composite indexes, sharding, and replication strategies, reducing response time from 2.5s to under 300ms.</li>
+                <li data-i18n="experience.trip.point3">Improved Kafka order event throughput with topic partitioning, asynchronous batch production, and consumer concurrency controls, supporting 20,000–50,000 daily peak order events.</li>
+                <li data-i18n="experience.trip.point4">Reduced first-screen load time from 6s to about 825ms through bundle analysis, CDN loading, lazy loading, and tree shaking.</li>
+              </ul>
+            </article>
+
+            <article class="card timeline-item">
+              <div class="card-head">
+                <div>
+                  <h3 data-i18n="experience.chenghua.role">Software Developer (CO-OP)</h3>
+                  <p class="muted" data-i18n="experience.chenghua.company">ChengHua · Chengdu, China</p>
+                </div>
+                <span class="pill">Jul 2023 — Aug 2023</span>
+              </div>
+              <p data-i18n="experience.chenghua.summary">
+                Contributed to a distributed environmental monitoring system using
+                microservices, messaging infrastructure, GIS visualization, and
+                cloud-native deployment practices.
+              </p>
+              <ul>
+                <li data-i18n="experience.chenghua.point1">Built a high-availability environmental monitoring management system with Spring Cloud, RabbitMQ, MongoDB, React, GIS maps, and Recharts.</li>
+                <li data-i18n="experience.chenghua.point2">Designed an RBAC system with Spring Security and MySQL to resolve permission conflicts and secure critical operational data.</li>
+                <li data-i18n="experience.chenghua.point3">Developed reliable asynchronous messaging with RabbitMQ, using producer-consumer decoupling, dead-letter queues, and retry logic.</li>
+                <li data-i18n="experience.chenghua.point4">Optimized large file uploads with chunked upload, resumable transfer, and instant upload, reducing upload time from 9–18s to 1–2s.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+            <h2 data-i18n="projects.title">Things I’ve built</h2>
+          </div>
+
+          <div class="grid projects-grid">
+            <article class="card project-card">
+              <h3 data-i18n="projects.social.title">Cloud-Based Social Media App</h3>
+              <p data-i18n="projects.social.summary">
+                Built and deployed containerized backend microservices on GCP with
+                Kubernetes, focusing on production stability, authentication, and
+                deployment efficiency.
+              </p>
+              <ul class="project-points">
+                <li data-i18n="projects.social.point1">Handled 10,000+ active daily requests through Cloud SQL tuning and connection pool optimization.</li>
+                <li data-i18n="projects.social.point2">Reduced production deploy time from 20 minutes to 5 minutes with optimized rolling updates and scheduling.</li>
+                <li data-i18n="projects.social.point3">Improved auth reliability with session caching and async verification, reducing identity-related incidents.</li>
+              </ul>
+              <div class="tags">
+                <span>GCP</span>
+                <span>Kubernetes</span>
+                <span>Cloud SQL</span>
+                <span>Firebase Auth</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" data-i18n="projects.ask">Ask for details</a>
+              </div>
+            </article>
+
+            <article class="card project-card">
+              <h3 data-i18n="projects.store.title">Online Computer Store Web Application</h3>
+              <p data-i18n="projects.store.summary">
+                Improved product catalog, checkout, and deployment performance in a
+                full-stack e-commerce application using Node.js, Express, MongoDB,
+                AWS, and Square Web Payments.
+              </p>
+              <ul class="project-points">
+                <li data-i18n="projects.store.point1">Reduced product catalog page load time from 3s to 610ms through query and aggregation optimization.</li>
+                <li data-i18n="projects.store.point2">Kept payment confirmation time around 1 second with asynchronous payment processing and caching.</li>
+                <li data-i18n="projects.store.point3">Improved production stability using AWS deployment, S3, CloudFront, auto scaling, and load balancing.</li>
+              </ul>
+              <div class="tags">
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+              </div>
+              <div class="project-links">
+                <a href="#contact" data-i18n="projects.ask">Ask for details</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+            <h2 data-i18n="skills.title">Tools and technologies</h2>
+          </div>
+
+          <div class="grid skills-grid">
+            <article class="card">
+              <h3 data-i18n="skills.languages">Languages</h3>
+              <ul class="simple-list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>C/C++</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Swift</li>
+                <li>HTML5/CSS3</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="skills.frameworks">Frameworks & Libraries</h3>
+              <ul class="simple-list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Spring Framework</li>
+                <li>Django</li>
+                <li>FastAPI</li>
+                <li>TensorFlow / PyTorch / TensorRT</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 data-i18n="skills.platforms">Databases & Cloud</h3>
+              <ul class="simple-list">
+                <li>MySQL / PostgreSQL / MongoDB / Redis / SQLite</li>
+                <li>AWS: EC2, RDS, S3, EKS, Lambda</li>
+                <li>GCP</li>
+                <li>Docker / Kubernetes</li>
+                <li>Kafka / RabbitMQ</li>
+                <li>Nginx / Linux / CI/CD / Git / Postman / JMeter</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-card card">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+            <h2 data-i18n="contact.title">Let’s connect</h2>
+            <p data-i18n="contact.summary">
+              I’m open to software engineering opportunities and collaborations in
+              backend, full-stack, and cloud-focused roles.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="button primary" href="mailto:huyugework@gmail.com" data-i18n="contact.email">Email me</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/yuge-hu-132528278" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p data-i18n="footer.copyright">© <span id="year"></span> Tom Hu. All rights reserved.</p>
+        <a href="#top" data-i18n="footer.top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
